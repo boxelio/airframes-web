@@ -225,7 +225,7 @@ module Web
         frame-ancestors 'self';
         base-uri 'self';
         default-src 'none';
-        script-src 'self';
+        script-src 'self' 'unsafe-inline';
         connect-src 'self';
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;
@@ -233,7 +233,7 @@ module Web
         object-src 'none';
         plugin-types application/pdf;
         child-src 'self';
-        frame-src 'self';
+        frame-src 'self' 'unsafe-inline' http://airframes.io:*;
         media-src 'self'
       }
 

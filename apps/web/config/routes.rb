@@ -6,4 +6,5 @@
 get '/dashboard', to: 'dashboard#index'
 get '/embed', to: 'embed#index'
 
-root to: 'embed#index'
+root to: 'frontpage#index'
+get '/frontpage', to: 'frontpage#index'
